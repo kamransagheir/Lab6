@@ -8,7 +8,7 @@
 <script src="spa.js"></script>
 </head>
 <body>
-	<h1>Create/View AddressBook</h1>
+	<h1>Step 1: Create AddressBook</h1>
 	<form action="#" th:action="@{/addressBookCreate}"
 		th:object="${addressBook}" method="post">
 		<p>
@@ -17,7 +17,7 @@
 	</form>
 	<p class="addressbook-id"></p>
 	<p class="addressbook-contents"></p>
-	<h1>Create Buddy</h1>
+	<h1>Step2: Create Buddy</h1>
 	<form action="#" th:action="@{/buddyAdd}" th:object="${buddy}"
 		method="post">
 		<p>
