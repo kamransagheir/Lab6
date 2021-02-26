@@ -9,10 +9,11 @@
 </head>
 <body>
 	<h1>Step 1: Create AddressBook</h1>
+	<h5>(Once created, pressing the Submit/View button will allow to view the created Addressbooks and the data in them)</h5>
 	<form action="#" th:action="@{/addressBookCreate}"
 		th:object="${addressBook}" method="post">
 		<p>
-			<input type="submit" value="Submit" />
+			<input type="submit" value="Submit/View" />
 		</p>
 	</form>
 	<p class="addressbook-id"></p>
