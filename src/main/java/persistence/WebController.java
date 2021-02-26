@@ -19,7 +19,7 @@ public class WebController {
         this.buddyInfoRepository = buddyInfoRepository;
     }
 
-    @GetMapping("/greeting")
+    @GetMapping("/")
     public String greetingForm(Model model) {
         model.addAttribute("addressBook", new AddressBook());
         model.addAttribute("buddy", new BuddyInfo());

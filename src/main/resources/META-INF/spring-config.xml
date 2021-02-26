@@ -3,12 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="mainPanel" class="MyJFrame" init-method="init">
+	<bean id="mainPanel" class="AddressBookJFrame" init-method="init">
 		<property name="title" value="persistence.AddressBook" />
 		<property name="contentPane" ref="mainPane" />
 	</bean>
 
-	<bean id="mainPane" class="MyJPanel" init-method="init">
+	<bean id="mainPane" class="AddressBookJPanel" init-method="init">
 		<property name="axis" value="1" />
 		<property name="panelComponents">
 			<list>
@@ -19,15 +19,15 @@
 		</property>
 	</bean>
 
-	<bean id="textField1" class="MyJTextField" init-method="init" />
+	<bean id="textField1" class="AddressBookJTextField" init-method="init" />
 
-	<bean id="textField2" class="MyJTextField" init-method="init" />
+	<bean id="textField2" class="AddressBookJTextField" init-method="init" />
 
-	<bean id="button" class="MyJButton" init-method="init">
+	<bean id="button" class="AddressBookJButton" init-method="init">
 		<property name="actionListener" ref="actionListener" />
 	</bean>
 
-	<bean id="actionListener" class="MyActionListener">
+	<bean id="actionListener" class="AddressBookActionListener">
 		<constructor-arg ref="addressBook" />
 		<constructor-arg ref="textField1" />
 		<constructor-arg ref="textField2" />
